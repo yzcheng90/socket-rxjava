@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sukeintel.iexhibition.mobile.app.works.mvp.widget.XLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mouse_root_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="1.0">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25.0dip"
+        android:layout_marginRight="25.0dip"
+        android:layout_marginTop="10.0dip"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1.0">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="是否开启智能选择" />
+
+        <com.sukeintel.iexhibition.mobile.app.works.mvp.widget.FunSwitch
+            android:id="@+id/switchButton"
+            android:layout_width="60.0dip"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/touch"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="20.0dip"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginRight="20.0dip"
+        android:layout_weight="1.0"
+        android:background="@drawable/linearlayout_radius"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/shou_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="触摸板"
+            android:textColor="#ffb1b0b0"
+            android:textSize="10.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="20.0dip"
+        android:paddingRight="20.0dip"
+        android:weightSum="1.0">
+
+        <Button
+            android:id="@+id/btn_keyword"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="40.0dip"
+            android:layout_marginBottom="20.0dip"
+            android:background="@drawable/btn_left_selector"
+            android:drawableLeft="@mipmap/keyword_icon"
+            android:paddingLeft="40.0dip"
+            android:textSize="12.0sp" />
+
+        <Button
+            android:id="@+id/btn_hand"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="40.0dip"
+            android:layout_marginBottom="20.0dip"
+            android:background="@drawable/btn_left_selector"
+            android:drawableLeft="@mipmap/hand_icon"
+            android:paddingLeft="40.0dip"
+            android:textSize="12.0sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_send"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="40.0dip"
+            android:layout_marginBottom="20.0dip"
+            android:background="@drawable/btn_left_selector"
+            android:text="发送"
+            android:textColor="@color/colorWhite"
+            android:textSize="12.0sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:layout_marginBottom="20.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_right_selector"
+            android:text="点击拖动"
+            android:textColor="@color/colorWhite"
+            android:textSize="12.0sp" />
+
+        <EditText
+            android:id="@+id/show_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/edit_right_circle"
+            android:hint="请输入内容..."
+            android:paddingLeft="10.0dip"
+            android:textColor="@color/text_secondary"
+            android:textSize="12.0sp"
+            android:visibility="gone" />
+    </LinearLayout>
+</com.sukeintel.iexhibition.mobile.app.works.mvp.widget.XLinearLayout>

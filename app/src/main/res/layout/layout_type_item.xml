@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/layout_id"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?android:selectableItemBackground"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@id/icon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:text=""
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/colorDisabled"
+        android:textSize="8sp" />
+</LinearLayout>

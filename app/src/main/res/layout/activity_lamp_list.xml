@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sukeintel.iexhibition.mobile.app.works.mvp.ui.power.LampListActivity">
+
+    <include
+        android:id="@id/titles"
+        layout="@layout/view_toolbar_defined" />
+
+    <cn.droidlover.xrecyclerview.XRecyclerContentLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@id/contentLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="2.0dip"
+        android:layout_marginTop="2.0dip"
+        android:layout_weight="1.0"
+        app:recyclerScrollbarNone="true"
+        app:recyclerScrollbarStyle="outsideOverlay" />
+
+    <Button
+        android:id="@id/submit"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:layout_margin="5.0dip"
+        android:background="@drawable/btn_submit"
+        android:text="一键关闭全部照明设备"
+        android:textColor="@color/colorWhite" />
+
+</LinearLayout>

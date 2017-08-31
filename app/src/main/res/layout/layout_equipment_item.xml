@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/layout_id"
+    android:layout_width="fill_parent"
+    android:layout_height="100.0dip"
+    android:foreground="?android:selectableItemBackground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            app:srcCompat="@mipmap/mainframe" />
+
+        <TextView
+            android:id="@id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:text="设备1号"
+            android:textColor="@color/colorGrey"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:id="@id/ip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:text="192.168.0.11"
+            android:textSize="10.0sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/selected"
+        android:layout_width="20.0dip"
+        android:layout_height="20.0dip"
+        android:layout_gravity="bottom|center|right"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:translationZ="50dp"
+        android:visibility="gone"
+        app:srcCompat="@mipmap/ok_icon" />
+</FrameLayout>

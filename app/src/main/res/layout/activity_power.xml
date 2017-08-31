@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg"
+    tools:context="com.sukeintel.iexhibition.mobile.app.works.mvp.ui.power.PowerControlActivity">
+
+    <include layout="@layout/view_toolbar_defined" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:padding="10.0dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="总电源"
+            android:textColor="@color/colorGrey"
+            android:textSize="12.0sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="5.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1.0">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="总电源开关"
+                android:textSize="12.0sp" />
+
+            <com.sukeintel.iexhibition.mobile.app.works.mvp.widget.FunSwitch
+                android:id="@+id/switchButton"
+                android:layout_width="60.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:padding="10.0dip"
+        android:weightSum="1.0">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设备电源"
+            android:textColor="@color/colorGrey"
+            android:textSize="12.0sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical">
+
+            <cn.droidlover.xrecyclerview.XRecyclerContentLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@id/contentLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="130.0dip"
+                android:background="#ffffffff"
+                app:recyclerBackgroundColor="#ffffffff"
+                app:recyclerScrollbarNone="true"
+                app:recyclerScrollbarStyle="outsideOverlay" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

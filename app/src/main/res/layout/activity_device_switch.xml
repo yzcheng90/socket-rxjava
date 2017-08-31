@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cb="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sukeintel.iexhibition.mobile.app.works.mvp.ui.power.DeviceSwitchActivity">
+
+    <include layout="@layout/view_toolbar_defined" />
+
+    <LinearLayout
+        android:id="@id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.sukeintel.iexhibition.mobile.app.works.mvp.widget.ToggleView
+            android:id="@+id/toggleView"
+            cb:slide_button="@mipmap/slide_button"
+            cb:switch_background="@mipmap/switch_background"
+            cb:switch_state="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="50dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/top"
+        android:background="@color/colorWhite"
+        android:orientation="vertical" />
+
+</LinearLayout>
